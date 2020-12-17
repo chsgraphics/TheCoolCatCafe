@@ -6,12 +6,15 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     block styles
       link(rel='stylesheet', href='/styles/main.css')
+      link(rel="preconnect", href='https://fonts.gstatic.com')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Notable&display=swap')
     block scripts
       script(src='/scripts/main.js')
     title #{title}
   body
     block header
       include header.pug
-    block content
+    .content-container
+      block content
     block footer
       include footer.pug

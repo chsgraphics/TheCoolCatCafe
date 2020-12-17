@@ -1,0 +1,10 @@
+{
+  pretty: true,
+  locals: {
+    links: [
+      ["Home", "/"],
+      ["Menu", "/menu.pug"],
+      ["About", "/about.pug"],
+    ],
+  }
+}

@@ -8,3 +8,89 @@
   --light-pink: #e8b9c2;
   --light-purple: #bca2d2;
 }
+
+/* for all pages */
+.content-container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 202px;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  margin: 0
+}
+
+/*nav and header style */
+.logo {
+  width: 90px;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 11rem;
+  background-color: var(--orange);
+  padding: 10px 30px 10px 30px;
+  border-radius: 100px;
+  border: 10px var(--cream) solid;
+}
+
+.purple-block {
+  background-color: var(--dark-purple);
+  color: var(--cream);
+  height: 20rem;
+  margin-top: -12rem;
+
+}
+
+p.title {
+  margin-top: 0;
+  font-family: 'Notable';
+  font-size: 48px;
+  padding-top: 15.5rem;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+a.nav-links {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.cream-block {
+  border-bottom: 10px var(--dark-purple) solid;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  background-color: var(--cream);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-container {
+  padding-left: 100px;
+}
+
+.header {
+}
+
+/* nav transitions */
+.spin {
+  transform: rotate(7deg);
+  width: 120%;
+  margin-top: 2rem;
+}

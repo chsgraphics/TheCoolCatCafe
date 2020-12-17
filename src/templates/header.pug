@@ -1,1 +1,10 @@
-p hi there, top of the page
+.header.sticky.spin
+  img.logo(src='/images/logo.png')
+  .purple-block
+    p.title The Cool Cat CafÉ
+  .cream-block
+    .link-container
+    each link in links
+      - let [name, url] = link;
+      a.nav-links(class={'is-active': page === name}, href=url) #{name}
+        
