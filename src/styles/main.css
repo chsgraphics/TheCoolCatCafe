@@ -14,6 +14,7 @@
   width: 1000px;
   margin: auto;
   margin-top: 202px;
+  margin-bottom: 185px;
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
@@ -120,13 +121,87 @@ a.nav-links:hover {
   background-color: var(--orange);
 }
 
-/*
-g
+/* footer styling yay */
+.footer {
+  height: 9rem;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+}
 
-g
-g
-g
-g
-g
+.dark-pink-block {
+  background-color: var(--dark-pink);
+  height: 9rem;
+  transform: rotate(7deg);
+  transform-origin: top left;
+  transition-duration: .5s;
+  z-index: 0;
+  position: relative;
+}
 
-g */
+.dark-pink-block.pink-straighten {
+  transform: rotate(0deg);
+  transform-origin: top left;
+  transition-duration: .5s;
+}
+
+.footer-text {
+  color: var(--cream);
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.footer-text p {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.footer-text.hideMe {
+  display: none;
+}
+
+.orange-block {
+  background-color: var(--orange);
+  height: 5rem;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 4;
+  transform: rotate(-7deg);
+  transform-origin: top right;
+  transition-duration: .5s;
+}
+
+.orange-block.orange-straighten {
+  transform: rotate(0deg);
+  transform-origin: bottom right;
+  transition-duration: .5s;
+  height: 2rem;
+  margin-top: 0;
+}
+
+.kitty {
+  position: relative;
+  top: -60px;
+  left: 40px;
+  width: 120px;
+}
+
+/* HOME PAGE STYLING */
+
+
+
+/* MENU PAGE STYLING */
+
+
+
+/* ABOUT PAGE STYLING */
+
+
+
+/* ALL RESPONSIVE STYLING */
