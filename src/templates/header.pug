@@ -1,10 +1,14 @@
 .header.sticky.spin#navbar
-  img.logo(src='/images/logo.png')#logo
+  a.logo-container(href="index.pug")
+    img.logo(src='/images/logo.png')#logo
   .purple-block
-    p.title The Cool Cat CafÉ
+    a(href="index.pug")
+      p.title The Cool Cat CafÉ
   .cream-block
     .link-container
     each link in links
       - let [name, url] = link;
       a.nav-links(class={'is-active': page === name}, href=url) #{name}
+
+
         

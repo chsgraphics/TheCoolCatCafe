@@ -14,7 +14,7 @@
   width: 1000px;
   margin: auto;
   margin-top: 202px;
-  margin-bottom: 185px;
+  margin-bottom: 225px;
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
@@ -50,10 +50,16 @@ body {
 
 p.title {
   margin-top: 0;
+  color: var(--cream);
+  text-decoration: none;
   font-family: 'Notable';
   font-size: 48px;
   padding-top: 9.5rem;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .sticky {
@@ -83,6 +89,10 @@ a.nav-links:hover {
   background-size: 120px;
 }
 
+a.nav-links:active {
+  color: var(--dark-purple);
+}
+
 .cream-block {
   border-bottom: 10px var(--dark-purple) solid;
   padding-top: .2rem;
@@ -104,10 +114,8 @@ a.nav-links:hover {
   width: 120%;
 }
 
-
-
 /* nav transitions */
-.spin-back {
+.header.spin-back {
   transform: rotate(0deg);
   transform-origin: top left;
   transition-duration: .5s;
@@ -164,6 +172,7 @@ a.nav-links:hover {
 
 .footer-text.hideMe {
   display: none;
+  transition: 1s;
 }
 
 .orange-block {
@@ -205,3 +214,81 @@ a.nav-links:hover {
 
 
 /* ALL RESPONSIVE STYLING */
+
+@media only screen and (max-width: 200px) {
+
+}
+
+@media only screen and (min-width: 200px) {
+  img.logo  {
+    width: 80px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    background-color: var(--cream);
+    border: 10px var(--orange) solid;
+    margin: 0;
+  }
+  .logo-container {
+    width: 100%;
+    background-color: var(--dark-purple);
+    margin: 0;
+  }
+  .purple-block {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    height: 8rem;
+    margin: 0;
+  }
+  .content-container {
+    width: 180px;
+  }
+  a.nav-links {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .logo, img.logo {
+    width: 80px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 15rem;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    background-color: var(--cream);
+    border: 10px var(--orange) solid;
+    transform: rotate(-7deg) scale(1.2);
+    transition-duration: 1s;
+    transform-origin: top;
+  }
+  a.nav-links {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .purple-block {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    height: 14rem;
+    margin-top: -10rem;
+  }
+  .content-container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 202px;
+    margin-bottom: 225px;
+  }
+
+}
