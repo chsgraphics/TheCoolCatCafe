@@ -5,7 +5,7 @@ let orange = document.getElementById("orange-chunk");
 let ftext = document.getElementById("foot-text");
 
 // responsive nav (NOT animated below 1024px)
-let below1024 = window.matchMedia("(max-width: 1024px)");
+let below1024 = window.matchMedia("(max-width: 1023px)");
 
 function responsiveNav(below1024) {
   if (below1024.matches) {

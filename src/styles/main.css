@@ -11,7 +11,7 @@
 
 /* for all pages */
 .content-container {
-  width: 1000px;
+  width: 70%;
   margin: auto;
   margin-top: 202px;
   margin-bottom: 225px;
@@ -417,8 +417,18 @@ a.nav-links:active {
 
 }
 
-@media only screen and (min-width: 400px) {
-
+@media only screen and (min-width: 600px) {
+  p.title {
+    font-size: 38px;
+  }
+  .purple-block {
+    padding-bottom: 1rem;
+  }
+  a.nav-links {
+    font-size: 24px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -427,11 +437,14 @@ a.nav-links:active {
 
 @media only screen and (min-width: 1024px) {
   /* making sure nav doesn't die on desktop */
+  .header.spin-back, #logo.logo-spin-back, .dark-pink-block.pink-straighten, .orange-block.orange-straighten {
+    transition-duration: 0.5s;
+  }
   .logo, img.logo {
     width: 80px;
     position: absolute;
     margin-top: -1.5rem;
-    margin-left: 15rem;
+    margin-left: 7rem;
     padding: 10px 30px 10px 30px;
     border-radius: 100px;
     background-color: var(--cream);
@@ -458,9 +471,10 @@ a.nav-links:active {
     color: var(--cream);
     height: 14rem;
     margin-top: -10rem;
+    padding-bottom: 0;
   }
   .content-container {
-    width: 1000px;
+    width: 70%;
     margin: auto;
     margin-top: 202px;
     margin-bottom: 225px;
@@ -545,7 +559,7 @@ a.nav-links:active {
     color: var(--cream);
     display: flex;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -60px;
   }
 
   .footer-text p {
@@ -570,4 +584,31 @@ a.nav-links:active {
     left: 40px;
     width: 120px;
   }
+}
+
+@media only screen and (min-width: 1100px) {
+  .logo, img.logo {
+    width: 80px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 10rem;
+  }
+
+  .footer-text {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+
+  .logo, img.logo {
+    width: 80px;
+    margin-top: -1.5rem;
+    margin-left: 12rem;
+  }
+
+  .footer-text {
+    margin-top: -50px;
+  }
+
 }
