@@ -215,12 +215,115 @@ a.nav-links:active {
 
 /* ALL RESPONSIVE STYLING */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 330px) {
+  /* NAVIGATON */
+  .header.spin-back, #logo.logo-spin-back, .dark-pink-block.pink-straighten, .orange-block.orange-straighten {
+    transition-duration: 0s;
+  }
+  img.logo  {
+    width: 50px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    background-color: var(--cream);
+    border: 10px var(--orange) solid;
+    margin: 0;
+    position: relative;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: .5rem;
+    background-color: var(--dark-purple);
+  }
+  .purple-block {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    height: auto;
+    margin: 0;
+  }
+  .content-container {
+    width: 70%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
+  }
+  a.nav-links {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: .2rem;
+    padding-right: .2rem;
+  }
+  .sticky {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  .header.spin-back {
+    margin-top: 0;
+  }
+  p.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Notable';
+    font-size: 20px;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+  }
 
+  a {
+    text-decoration: none;
+  }
+  /*FOOTER*/
+  .footer {
+    position: relative;
+    width: auto;
+    display: table;
+  }
+  .dark-pink-block {
+    background-color: var(--dark-pink);
+    height: auto;
+    z-index: 0;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-text {
+    color: var(--cream);
+    display: block;
+    justify-content: center;
+    margin-top: -60px;
+  }
+
+  .footer-text p {
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+  }
+  .kitty {
+    width: 90px;
+    position: relative;
+    top: -60px;
+    left: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 28px;
+  }
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 330px) {
   /* NAVIGATON */
+  .header.spin-back, #logo.logo-spin-back, .dark-pink-block.pink-straighten, .orange-block.orange-straighten {
+    transition-duration: 0s;
+  }
   img.logo  {
     width: 80px;
     padding: 10px 30px 10px 30px;
@@ -244,7 +347,10 @@ a.nav-links:active {
     margin: 0;
   }
   .content-container {
-    width: 180px;
+    width: 70%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
   }
   a.nav-links {
     font-family: 'Montserrat';
@@ -277,7 +383,37 @@ a.nav-links:active {
     text-decoration: none;
   }
   /*FOOTER*/
-  
+  .footer {
+    position: relative;
+    width: auto;
+    display: table;
+  }
+  .dark-pink-block {
+    background-color: var(--dark-pink);
+    height: auto;
+    z-index: 0;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-text {
+    color: var(--cream);
+    display: block;
+    justify-content: center;
+    margin-top: -60px;
+  }
+
+  .footer-text p {
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+  }
+  .kitty {
+    width: 90px;
+    position: relative;
+    top: -60px;
+    left: 20px;
+  }
 
 }
 
@@ -290,6 +426,7 @@ a.nav-links:active {
 }
 
 @media only screen and (min-width: 1024px) {
+  /* making sure nav doesn't die on desktop */
   .logo, img.logo {
     width: 80px;
     position: absolute;
@@ -378,5 +515,59 @@ a.nav-links:active {
     width: auto;
     margin: auto;
     background-color: var(--dark-purple);
+  }
+  /*making sure footer doesn't die on desktop */
+  .footer {
+    height: 9rem;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .dark-pink-block {
+    background-color: var(--dark-pink);
+    height: 9rem;
+    transform: rotate(7deg);
+    transform-origin: top left;
+    transition-duration: .5s;
+    z-index: 0;
+    position: relative;
+    padding: 0;
+
+  }
+
+  .footer-text {
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+  }
+
+  .footer-text p {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .orange-block {
+    background-color: var(--orange);
+    height: 5rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(-7deg);
+    transform-origin: top right;
+    transition-duration: .5s;
+  }
+
+  .kitty {
+    position: relative;
+    top: -60px;
+    left: 40px;
+    width: 120px;
   }
 }
