@@ -215,11 +215,12 @@ a.nav-links:active {
 
 /* ALL RESPONSIVE STYLING */
 
-@media only screen and (max-width: 200px) {
+@media only screen and (max-width: 320px) {
 
 }
 
-@media only screen and (min-width: 200px) {
+@media only screen and (min-width: 320px) {
+  /* NAVIGATON */
   img.logo  {
     width: 80px;
     padding: 10px 30px 10px 30px;
@@ -227,24 +228,57 @@ a.nav-links:active {
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     margin: 0;
+    position: relative;
   }
   .logo-container {
-    width: 100%;
-    background-color: var(--dark-purple);
+    display: flex;
+    justify-content: center;
     margin: 0;
+    padding-top: .5rem;
+    background-color: var(--dark-purple);
   }
   .purple-block {
     background-color: var(--dark-purple);
     color: var(--cream);
-    height: 8rem;
+    height: 3rem;
     margin: 0;
   }
   .content-container {
     width: 180px;
   }
   a.nav-links {
+    font-family: 'Montserrat';
+    font-weight: 800;
     font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+  .sticky {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  .header.spin-back {
+    margin-top: 0;
+  }
+  p.title {
+    margin-top: 0;
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Notable';
+    font-size: 24px;
+    padding-top: 0rem;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  /*FOOTER*/
+  
+
 }
 
 @media only screen and (min-width: 400px) {
@@ -269,6 +303,10 @@ a.nav-links:active {
     transition-duration: 1s;
     transform-origin: top;
   }
+  .logo-container {
+    display: block;
+    margin: auto;
+  }
   a.nav-links {
     font-family: 'Montserrat';
     font-weight: 800;
@@ -290,5 +328,55 @@ a.nav-links:active {
     margin-top: 202px;
     margin-bottom: 225px;
   }
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .header.spin-back {
+    transform: rotate(0deg);
+    transform-origin: top left;
+    transition-duration: .5s;
+    margin-top: 2rem;
+  }
+  .header {
+    transform: rotate(7deg);
+    transform-origin: top left;
+    transition-duration: 1s;
+    width: 120%;
+  }
+  p.title {
+    margin-top: 0;
+    color: var(--cream);
+    text-decoration: none;
+    font-family: 'Notable';
+    font-size: 48px;
+    padding-top: 9.5rem;
+    text-align: center;
+  }
 
+  a {
+    text-decoration: none;
+  }
+
+  .sticky {
+    position: fixed;
+    width: 120%;
+    top: 0;
+  }
+
+  a.nav-links {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .logo-container {
+    width: auto;
+    margin: auto;
+    background-color: var(--dark-purple);
+  }
 }
