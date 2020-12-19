@@ -12,8 +12,9 @@ html(lang='en')
   body
     block header
       include header.pug
-    .content-container
-      block content
+    block outside-container-content
+      .content-container
+        block content
     block footer
       include footer.pug
     block scripts
