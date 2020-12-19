@@ -614,6 +614,7 @@ a.nav-links:active {
 }
 /*Index*/
 .test-index1 {
+	margin-top: 350px;
 	text-align: center;
 }
 
@@ -632,4 +633,35 @@ a.nav-links:active {
 	width: 800px;
 	margin:auto;
 	display:flex;
+}
+.test-about1 {
+	margin-top: 100px;
+	padding-right: 3rem;
+	justify-content: center;
+}
+.test-about2 img {
+	margin-top: 100px;
+	width: 150px;
+}
+.test-about1and2 {
+	margin-top: 350px;
+	margin:auto;
+	display:flex;
+	width: 750px;
+}
+.test-about3 img {
+	width: 200px;
+}
+.test-about4 {
+	padding-left: 3rem;
+	justify-content: center;
+}
+.test-about3and4 {
+	margin:auto;
+	display:flex;
+	width: 750px;
+}
+.test-about5 {
+	justify-content: center;
+	text-align: center;
 }
