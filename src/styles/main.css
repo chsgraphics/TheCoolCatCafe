@@ -7,6 +7,7 @@
   --cream: #ffedda;
   --light-pink: #e8b9c2;
   --light-purple: #bca2d2;
+  --dark-red: #6F2432;
 }
 
 /* for all pages */
@@ -19,6 +20,7 @@
 
 p, h1, h2, h3, h4, h5, h6, a {
   font-family: 'Montserrat', sans-serif;
+  color: var(--dark-red);
 }
 
 body {
@@ -36,7 +38,7 @@ body {
   border-radius: 100px;
   background-color: var(--cream);
   border: 10px var(--orange) solid;
-  transform: rotate(-7deg) scale(1.2);
+  transform: rotate(-5deg) scale(1.2);
   transition-duration: 1s;
   transform-origin: top;
 }
@@ -70,6 +72,7 @@ a {
 
 a.nav-links {
   font-family: 'Montserrat';
+  color: var(--dark-purple);
   font-weight: 800;
   font-size: 28px;
   text-transform: uppercase;
@@ -108,7 +111,7 @@ a.nav-links:active {
 }
 
 .header {
-  transform: rotate(7deg);
+  transform: rotate(5deg);
   transform-origin: top left;
   transition-duration: 1s;
   width: 120%;
@@ -145,7 +148,7 @@ a.nav-links:active {
 .dark-pink-block {
   background-color: var(--dark-pink);
   height: 9rem;
-  transform: rotate(7deg);
+  transform: rotate(5deg);
   transform-origin: top left;
   transition-duration: .5s;
   z-index: 0;
@@ -168,6 +171,7 @@ a.nav-links:active {
 .footer-text p {
   padding-left: 4rem;
   padding-right: 4rem;
+  color: var(--cream);
 }
 
 .footer-text.hideMe {
@@ -181,7 +185,7 @@ a.nav-links:active {
   margin-top: -5rem;
   position: relative;
   z-index: 4;
-  transform: rotate(-7deg);
+  transform: rotate(-5deg);
   transform-origin: top right;
   transition-duration: .5s;
 }
@@ -206,8 +210,132 @@ a.nav-links:active {
 
 
 /* MENU PAGE STYLING */
+/* coffees = right, tea = left */
 
+.menu-container {
+  margin-top: 250px;
+  margin-bottom: 225px;
+}
 
+.menu-container p {
+  font-size: 36px;
+  margin: 0;
+}
+
+.cof.m-line {
+  padding-left: 2rem;
+  float: right;
+}
+
+.cof.m-line hr, .tea.m-line hr {
+  margin-top: 1rem;
+  width: 900px;
+}
+
+.c-line {
+  border: 3px var(--orange) solid;
+}
+
+.coffees {
+  display: flex;
+  float: right;
+}
+
+/* tea */
+.tea.m-line {
+  padding-right: 2rem;
+  float: left;
+}
+
+.teas {
+  display: flex;
+  float: left;
+}
+
+.cof p {
+  color: #FF8000;
+  font-weight: bold;
+}
+
+.m-content {
+  width: 70%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+}
+
+.tea.m-content {
+  flex-direction: row-reverse;
+}
+
+.items-and-prices p {
+  font-weight: 400;
+  font-size: 20px;
+  padding: .5rem 0;
+  color: var(--dark-red);
+
+}
+
+div.items-and-prices  {
+  width: 700px;
+}
+
+.items-and-prices {
+  display: flex;
+}
+
+.prices {
+  padding-left: 4rem;
+}
+
+.m-content img {
+  object-fit: contain;
+}
+
+.cof.m-content img {
+  margin-right: 2rem;
+}
+
+.tea.m-line hr.c-line {
+  border: 3px var(--dark-pink) solid;
+}
+
+.tea.m-text p {
+  color: var(--dark-pink);
+  font-weight: bold;
+}
+
+.cof.m-text.-S p {
+  color: var(--dark-purple);
+}
+
+.m-line.-S hr{
+  border: 3px var(--dark-purple) solid;
+}
+
+#CS hr {
+  border: 3px var(--orange) solid;
+}
+
+#CStxt p {
+  color:  #FF8000;
+}
+
+#HS hr {
+  border: 3px var(--dark-pink) solid;
+}
+
+#HStxt p {
+  color: var(--dark-pink);
+}
+
+#S hr {
+  border: 3px var(--dark-purple) solid;
+}
+
+#Stxt p {
+  color: var(--dark-purple);
+}
 
 /* ABOUT PAGE STYLING */
 
@@ -449,7 +577,7 @@ a.nav-links:active {
     border-radius: 100px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
-    transform: rotate(-7deg) scale(1.2);
+    transform: rotate(-5deg) scale(1.2);
     transition-duration: 1s;
     transform-origin: top;
   }
@@ -491,7 +619,7 @@ a.nav-links:active {
     margin-top: 2rem;
   }
   .header {
-    transform: rotate(7deg);
+    transform: rotate(5deg);
     transform-origin: top left;
     transition-duration: 1s;
     width: 120%;
@@ -546,7 +674,7 @@ a.nav-links:active {
   .dark-pink-block {
     background-color: var(--dark-pink);
     height: 9rem;
-    transform: rotate(7deg);
+    transform: rotate(5deg);
     transform-origin: top left;
     transition-duration: .5s;
     z-index: 0;
@@ -573,7 +701,7 @@ a.nav-links:active {
     margin-top: -5rem;
     position: relative;
     z-index: 4;
-    transform: rotate(-7deg);
+    transform: rotate(-5deg);
     transform-origin: top right;
     transition-duration: .5s;
   }
