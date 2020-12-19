@@ -1,21 +1,27 @@
 extends templates/page.pug
 
 block prepend header
-  - const page = "Home";
-
+ - const page = "Home";
+ 
 block content
-  pre 
-  pre 
-  p Hi there, stranger! If you’re looking for a spot of sunlight to rest and relax for a moment, you’ve come to the right place. Settle in, and get ready for some next level tea, coffee, and vibes. 
+ .test-index1
+  p Hi there, stranger! If you’re looking for a spot of sunlight to rest and relax for a moment, you’ve come to the right place. Settle in, and get ready for some next level tea, coffee, and vibes.
   p We’re not kitten about our drinks.
-  pre 
-  img(src='/images/index-placeholder.png' alt='Italian Trulli')
-  pre 
-  pre 
-  p Monday			11AM-8PM
-  p Tuesday			11AM-8PM
-  p Wednesday			11AM-8PM
-  p Thursday			11AM-8PM
-  p Friday			10AM-10PM
-  p Saturday			10AM-10PM
-  p Sunday			10AM-7PM
+  img(src='/images/index-placeholder.png', alt='Italian Trulli')
+  .test-index2and3
+   .test-index2
+    p Monday
+    p Tuesday
+    p Wednesday
+    p Thursday
+    p Friday
+    p Saturday
+    p Sunday
+   .test-index3
+    p 11AM-8PM 
+    p 11AM-8PM
+    p 11AM-8PM
+    p 11AM-8PM
+    p 10AM-10PM 
+    p 10AM-10PM
+    p 10AM-7PM

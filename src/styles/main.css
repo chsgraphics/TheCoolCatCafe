@@ -612,3 +612,24 @@ a.nav-links:active {
   }
 
 }
+/*Index*/
+.test-index1 {
+	text-align: center;
+}
+
+.test-index2 {
+	text-align: left;
+	padding-right: 3rem;
+}
+
+.test-index3 {
+	text-align: left;
+}
+
+.test-index2and3 {
+	font-style: italic;
+	justify-content: center;
+	width: 800px;
+	margin:auto;
+	display:flex;
+}
