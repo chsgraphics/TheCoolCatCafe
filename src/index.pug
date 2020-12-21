@@ -2,25 +2,37 @@ extends templates/page.pug
 
 block prepend header
  - const page = "Home";
+
 block content
- .test-index1
-  p Hi there, stranger! If you’re looking for a spot of sunlight to rest and relax for a moment, you’ve come to the right place. Settle in, and get ready for some next level tea, coffee, and vibes.
-  p We’re not kitten about our drinks.
-  img(src='/images/index-placeholder.png', alt='Italian Trulli')
-  .test-index2and3
-   .test-index2
-    p Monday
-    p Tuesday
-    p Wednesday
-    p Thursday
-    p Friday
-    p Saturday
-    p Sunday
-   .test-index3
-    p 11AM-8PM 
-    p 11AM-8PM
-    p 11AM-8PM
-    p 11AM-8PM
-    p 10AM-10PM 
-    p 10AM-10PM
-    p 10AM-7PM
+  .test-index1
+    p Hi there, stranger! If you’re looking for a spot of sunlight to rest and relax for a moment, you’ve come to the right place. Settle in, and get ready for some next level tea, coffee, and vittles. We’re not kitten about our drinks!
+    
+    //CAROUSEL !
+    .owl-carousel#myCarousel
+      .c-pic
+        img(src='images/interior 1.jpeg')
+      .c-pic
+        img(src='images/cat1.jpeg')
+      .c-pic
+        img(src='images/interior 2.jpeg')
+      .c-pic
+        img(src='images/cat2.jpeg')
+      .c-pic
+          img(src='images/sandwiches.jpeg')
+    .test-index2and3
+      .test-index2
+        p Monday
+        p Tuesday
+        p Wednesday
+        p Thursday
+        p Friday
+        p Saturday
+        p Sunday
+      .test-index3
+        p 11AM-8PM 
+        p 11AM-8PM
+        p 11AM-8PM
+        p 11AM-8PM
+        p 10AM-10PM 
+        p 10AM-10PM
+        p 10AM-7PM
