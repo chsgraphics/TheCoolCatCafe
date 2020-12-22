@@ -241,30 +241,29 @@ a.nav-links:active {
 }
 
 .m-content {
-  width: 60%;
+  width: 65%;
   margin: auto;
   padding: 1.5rem 0;
   display: flex;
 }
-.cof .items-and-prices p, .tea .items-and-prices p {
+
+.items-and-prices p, .items-and-prices p {
   font-weight: 400;
   font-size: 20px;
   padding: .5rem 0;
   color: var(--dark-red);
 }
 
-.cof.m-line hr, .tea.m-line hr {
+.m-line hr {
   margin-top: 1rem;
   width: 900px;
   border: 3px #000 solid;
 }
 
-div.items-and-prices  {
-  width: 700px;
-}
-
 .items-and-prices {
   display: flex;
+  width: 100%;
+  margin-left: 0;
 }
 
 .prices {
@@ -277,75 +276,41 @@ div.items-and-prices  {
 }
 
 /*lines */
-.cof.m-line {
+.coffees .m-line {
   padding-left: 2rem;
   float: right;
 }
 
-
-
-.tea.m-line {
+.teas .m-line {
   padding-right: 2rem;
   float: left;
 }
 
-
-.c-line {
-  border: 3px var(--orange) solid;
-}
-
-.tea.m-line hr.c-line {
-  border: 3px var(--dark-pink) solid;
-}
-
-#CS hr {
-  border: 3px var(--orange) solid;
-}
-
-
-#HS hr {
-  border: 3px var(--dark-pink) solid;
-}
-
-#S hr {
-  border: 3px var(--dark-purple) solid;
-}
-
-.m-line.-S hr{
-  border: 3px var(--dark-purple) solid;
-}
-
-
-/*font colors*/
-#CStxt p {
-  color:  #FF8000;
-}
-#HStxt p {
-  color: var(--dark-pink);
-}
-
-#Stxt p {
-  color: var(--dark-purple);
-}
-
-.cof.m-text.-S p {
-  color: var(--dark-purple);
-}
-
-.cof p {
+.orange hr, .orange p {
+  border-color: var(--orange);
   color: #FF8000;
   font-weight: bold;
 }
 
-.tea.m-text p {
+.purple hr, .purple p {
+  border-color: var(--dark-purple);
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+
+.pink hr, .pink p {
+  border-color: var(--dark-pink);
   color: var(--dark-pink);
   font-weight: bold;
 }
 
-
 /* different sides */
 .cof.m-content img {
-  margin-right: 2rem;
+  margin-right: 1rem;
+}
+
+.tea.m-content img {
+  margin-left: 1rem;
 }
 
 .coffees {
@@ -361,7 +326,6 @@ div.items-and-prices  {
 .tea.m-content {
   flex-direction: row-reverse;
 }
-
 
 
 /* ABOUT and HOME PAGE STYLING */
@@ -566,6 +530,85 @@ hr.quote-border {
   .test-index2and3 p {
     font-size: 12px;
   }
+
+  /* nmenuuuu */
+  .menu-container {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .m-content {
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 12px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    display: none;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .drinks {
+    width: 60%;
+  }
+
+  .prices {
+    width: auto;
+  }
+
+  .cof.m-content img, .tea.m-content img {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+  }
+
+  .coffees, .teas {
+    text-align: center;
+  }
+
+  .coffees {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .teas {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  /* colors */
+  .orange p {
+    background-color:  #FF8000;
+    color: var(--cream);
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .purple hr, .purple p {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    background-color: var(--dark-pink);
+    color: var(--cream);
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 330px) {
@@ -705,6 +748,83 @@ hr.quote-border {
     justify-content: center;
     padding-top: 1rem;
   }
+  /* nmenuuuu */
+  .menu-container {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .m-content {
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    display: none;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cof.m-content img, .tea.m-content img {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+  }
+
+  .coffees, .teas {
+    text-align: center;
+  }
+
+  .coffees {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .teas {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  /* colors */
+  .orange p {
+    background-color:  #FF8000;
+    color: var(--cream);
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .purple hr, .purple p {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    background-color: var(--dark-pink);
+    color: var(--cream);
+    font-weight: bold;
+  }
+  .drinks {
+    width: 60%;
+  }
+
+  .prices {
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -722,7 +842,11 @@ hr.quote-border {
 }
 
 @media only screen and (min-width: 769px) {
-
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin: 1rem 5rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -899,6 +1023,10 @@ hr.quote-border {
     width: 40%;
     text-align: center;
   }
+  .menu-container {
+    margin-top: 250px;
+    margin-bottom: 225px;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -929,5 +1057,96 @@ hr.quote-border {
   	padding-right: 2rem;
   	justify-content: center;
     width: 60%;
+  }
+  /* nmenuuuu */
+
+  .m-content {
+    width: 65%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: flex;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    margin-top: 1rem;
+    width: 900px;
+    border: 3px #000 solid;
+    display: block;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .prices {
+    padding-left: 1rem;
+  }
+
+  .tea.m-content img, .cof.m-content img {
+    object-fit: contain;
+    width: 50%;
+  }
+  .cof.m-content img {
+    margin-right: 1rem;
+  }
+
+  .tea.m-content img {
+    margin-left: 1rem;
+  }
+
+  .coffees {
+    display: flex;
+    float: right;
+  }
+
+  .teas {
+    display: flex;
+    float: left;
+  }
+
+  .tea.m-content {
+    flex-direction: row-reverse;
+  }
+  /*lines */
+  .coffees .m-line {
+    padding-left: 2rem;
+    float: right;
+  }
+
+  .teas .m-line {
+    padding-right: 2rem;
+    float: left;
+  }
+  /* colors */
+  .orange p, .purple p, .pink p {
+    width: auto;
+    background-color: var(--cream);
+  }
+
+  .orange hr, .orange p {
+    border-color: var(--orange);
+    color: #FF8000;
+    font-weight: bold;
+  }
+
+  .purple hr, .purple p {
+    border-color: var(--dark-purple);
+    color: var(--dark-purple);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    border-color: var(--dark-pink);
+    color: var(--dark-pink);
+    font-weight: bold;
   }
 }
