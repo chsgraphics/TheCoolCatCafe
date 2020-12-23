@@ -414,8 +414,8 @@ hr.quote-border {
   }
   img.logo  {
     width: 50px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     margin: 0;
@@ -618,8 +618,8 @@ hr.quote-border {
   }
   img.logo  {
     width: 80px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     margin: 0;
@@ -857,10 +857,10 @@ hr.quote-border {
   .logo, img.logo {
     width: 80px;
     position: absolute;
-    margin-top: -1.5rem;
+    margin-top: -1rem;
     margin-left: 7rem;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     transform: rotate(-5deg) scale(1.2);
@@ -1037,6 +1037,10 @@ hr.quote-border {
     margin-left: 10rem;
   }
 
+  .logo-container img {
+    overflow:
+  }
+
   .footer-text {
     margin-top: -50px;
   }
@@ -1045,7 +1049,7 @@ hr.quote-border {
 @media only screen and (min-width: 1216px) {
 
   .logo, img.logo {
-    width: 80px;
+    width: 70px;
     margin-top: -1.5rem;
     margin-left: 12rem;
   }
