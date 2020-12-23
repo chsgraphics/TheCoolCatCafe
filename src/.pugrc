@@ -6,5 +6,45 @@
       ["Menu", "/menu.pug"],
       ["About", "/about.pug"],
     ],
+    coffees: [
+      ["Black Clawffee", "$1.5/$2.1"],
+      ["Catfé au Lait", "$2.85/$3.5"],
+      ["Clatte", "$2.85/$3.5"],
+      ["Catpurrccino", "$2.65/$3.5"],
+      ["Espurresso", "$1.35/$2"],
+      ["Ameowricano", "$1.35/$2"],
+    ],
+    teas: [
+      ["Meowcha", "$3.15/$4.15"],
+      ["Chait Tea Clatte", "$3/$3.75"],
+      ["Purrl Gray Tea", "$2.15/$2.95"],
+      ["Honey Jasmewn Tea", "$2.15/$2.95"],
+      ["Peachyhisst Mint Tea", "$2.35/$3.5"],
+    ],
+    sweets: [
+      ["Affogato", "$3.85"],
+      ["Cheesecake", "$4.5"],
+      ["Crème Brûlée", "$4"],
+      ["Lemon Tart", "$3.85"],
+    ],
+    coldcuts: [
+      ["Cranberry-Walnut Chicken Sandwich", "$4.15"],
+      ["Smoked Salmon and Egg Croissant", "$4.85"],
+      ["Cobb Salad Sandwich", "$4.85"],
+      ["Muffuletta", "$4.5"],
+      ["Chicken Caesar Wrap", "$3.5"],
+    ],
+    hotcuts: [
+      ["Cuban", "$4.5"],
+      ["Mojito Pulled Pork", "$4.5"],
+      ["Philly Cheese", "$4.5"],
+      ["Bistro Turkey", "$4.1"],
+      ["Meatball Sub", "$3.85"],
+    ],
+    soups: [
+      ["Clowder Chowder", "$4.5"],
+      ["Onion Bisque", "$4.5"],
+      ["Tomato", "$3.5"],
+    ],
   }
 }

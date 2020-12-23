@@ -247,12 +247,16 @@ a.nav-links:active {
   display: flex;
 }
 
-.items-and-prices p, .items-and-prices p {
-  font-weight: 400;
-  font-size: 20px;
-  padding: .5rem 0;
-  color: var(--dark-red);
+td.i {
+  padding-right: 4rem;
 }
+
+.items-and-prices {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 
 .m-line hr {
   margin-top: 1rem;
@@ -843,9 +847,7 @@ hr.quote-border {
 
 @media only screen and (min-width: 769px) {
   .items-and-prices {
-    display: flex;
-    width: 100%;
-    margin: 1rem 5rem;
+
   }
 }
 
@@ -955,8 +957,12 @@ hr.quote-border {
     content: "";
     clear: both;
     display: table;
+    transition-duration: .5s;
   }
-
+  .shorter-footer {
+    transform: translateY(2rem);
+    transition-duration: .5s;
+  }
   .dark-pink-block {
     background-color: var(--dark-pink);
     height: 9rem;
@@ -966,9 +972,25 @@ hr.quote-border {
     z-index: 0;
     position: relative;
     padding: 0;
-
+  }
+  .orange-block {
+    background-color: var(--orange);
+    height: 5rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(-5deg);
+    transform-origin: top right;
+    transition-duration: .5s;
+  }
+  .dark-pink-block .pink-straighten {
+    height: 9rem;
   }
 
+  .orange-block.orange-straighten {
+    height: 2rem;
+    margin-top: 0;
+  }
   .footer-text {
     color: var(--cream);
     display: flex;
@@ -981,16 +1003,6 @@ hr.quote-border {
     padding-right: 4rem;
   }
 
-  .orange-block {
-    background-color: var(--orange);
-    height: 5rem;
-    margin-top: -5rem;
-    position: relative;
-    z-index: 4;
-    transform: rotate(-5deg);
-    transform-origin: top right;
-    transition-duration: .5s;
-  }
 
   .kitty {
     position: relative;
@@ -1049,7 +1061,7 @@ hr.quote-border {
 @media only screen and (min-width: 1216px) {
 
   .logo, img.logo {
-    width: 70px;
+    width: 90px;
     margin-top: -1.5rem;
     margin-left: 12rem;
   }

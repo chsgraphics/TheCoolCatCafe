@@ -14,20 +14,14 @@ block outside-container-content
     .cof.m-content
       img(src="/images/catpurrcino.jpeg")
       .items-and-prices
-        .drinks
-          p Black Clawfee
-          p Catfé au Lait
-          p Clatte
-          p Catpurrccino
-          p Espurresso
-          p Ameowricano
-        .prices
-          p $1.5/$2.1
-          p $1.5/$2.1
-          p $2.85/$3.5
-          p $2.65/$3.35
-          p $1.35/$2
-          p $1.35/$2
+        table 
+          each option in coffees 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}     
     .teas.purple
       .m-line
         hr.c-line
@@ -36,18 +30,14 @@ block outside-container-content
     .tea.m-content
       img(src="/images/cheesecake and coffee.jpeg")
       .items-and-prices
-        .drinks
-          p Meowcha
-          p Chai Tea Clatte
-          p Purrl Gray Tea
-          p Honey Jasmewn Tea
-          p Peachyhisst Mint Tea
-        .prices
-          p $3.15/$4.15
-          p $3/$3.75
-          p $2.15/$2.95
-          p $2.15/$2.95
-          p $2.35/$3.5
+        table 
+          each option in teas 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}     
     .coffees.pink
       .m-text.-S
         p SWEETS
@@ -56,16 +46,14 @@ block outside-container-content
     .cof.m-content
       img(src="/images/sweets.png")
       .items-and-prices
-        .drinks
-          p Affogato
-          p Cheesecake
-          p Crème Brûlée
-          p Lemon Tart
-        .prices
-          p $3.85
-          p $4.5
-          p $4
-          p $3.85
+        table 
+          each option in sweets 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}    
     .teas.orange
       .m-line
         hr
@@ -74,18 +62,14 @@ block outside-container-content
     .tea.m-content
       img(src="/images/cold-sandwiches.png")
       .items-and-prices
-        .drinks
-          p Cranberry-Walnut Chicken
-          p Smoked Salmon and Egg Croissant
-          p Cobb Salad
-          p Muffuletta
-          p Chicken Caesar Wrap
-        .prices
-          p $4.15
-          p $4.85
-          p $4.85
-          p $4.5
-          p $3.5
+        table 
+          each option in coldcuts 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}    
     .coffees.purple
       .m-text
         p HOT CUTS
@@ -94,18 +78,14 @@ block outside-container-content
     .cof.m-content
       img(src="/images/hot cuts.png")
       .items-and-prices
-        .drinks
-          p Cuban
-          p Mojito Pulled Pork
-          p Philly Cheese
-          p Bistro Turkey
-          p Meatball Sub
-        .prices
-          p $4.5
-          p $4.5
-          p $4.5
-          p $4.1
-          p $3.85
+        table 
+          each option in hotcuts 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}    
     .teas.pink
       .m-line
         hr
@@ -114,13 +94,11 @@ block outside-container-content
     .tea.m-content
       img(src="/images/soups.png")
       .items-and-prices
-        .drinks
-          p Clowder Chowder
-          p Onion Bisque
-          p Tomato
-        .prices
-          p $4.5
-          p $4.5
-          p $3.5
-          
-      
+        table 
+          each option in soups 
+            - let [item, price] = option;
+            tr
+              td.i 
+                p #{item}
+              td 
+                p #{price}    

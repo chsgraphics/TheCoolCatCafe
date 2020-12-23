@@ -3,6 +3,7 @@ let logo = document.getElementById("logo");
 let pink = document.getElementById("pink-chunk");
 let orange = document.getElementById("orange-chunk");
 let ftext = document.getElementById("foot-text");
+let footer = document.getElementById("whole-foot");
 
 // responsive nav (NOT animated below 1024px)
 let below1024 = window.matchMedia("(max-width: 1023px)");
@@ -48,10 +49,13 @@ function footFunction() {
     pink.classList.add("pink-straighten");
     orange.classList.add("orange-straighten");
     ftext.classList.remove("hideMe");
+    footer.classList.remove("shorter-footer");
   } else {
     pink.classList.remove("pink-straighten");
     orange.classList.remove("orange-straighten");
     ftext.classList.add("hideMe");
+    footer.classList.add("shorter-footer");
+
   }
 };
 
