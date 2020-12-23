@@ -12,9 +12,9 @@
 
 /* for all pages */
 .content-container {
-  width: 70%;
+  width: 60%;
   margin: auto;
-  margin-top: 202px;
+  margin-top: 212px;
   margin-bottom: 225px;
 }
 
@@ -26,6 +26,20 @@ p, h1, h2, h3, h4, h5, h6, a {
 body {
   background-color: var(--cream);
   margin: 0
+}
+
+p {
+  font-size: 20px;
+}
+
+::-moz-selection{
+  color: var(--dark-red);
+  background: var(--light-pink);
+}
+
+::selection {
+  color: var(--dark-red);
+  background: var(--light-pink);
 }
 
 /*nav and header style */
@@ -46,8 +60,8 @@ body {
 .purple-block {
   background-color: var(--dark-purple);
   color: var(--cream);
-  height: 14rem;
-  margin-top: -10rem;
+  height: 28rem;
+  margin-top: -24rem;
 }
 
 p.title {
@@ -56,7 +70,7 @@ p.title {
   text-decoration: none;
   font-family: 'Notable';
   font-size: 48px;
-  padding-top: 9.5rem;
+  padding-top: 23.5rem;
   text-align: center;
 }
 
@@ -115,6 +129,7 @@ a.nav-links:active {
   transform-origin: top left;
   transition-duration: 1s;
   width: 120%;
+  z-index: 4;
 }
 
 /* nav transitions */
@@ -143,6 +158,7 @@ a.nav-links:active {
   content: "";
   clear: both;
   display: table;
+  z-index: 3;
 }
 
 .dark-pink-block {
@@ -166,12 +182,14 @@ a.nav-links:active {
   display: flex;
   justify-content: center;
   margin-top: -50px;
+  text-align: center;
 }
 
 .footer-text p {
   padding-left: 4rem;
   padding-right: 4rem;
   color: var(--cream);
+  font-size: 16px;
 }
 
 .footer-text.hideMe {
@@ -210,7 +228,7 @@ a.nav-links:active {
 
 
 /* MENU PAGE STYLING */
-/* coffees = right, tea = left */
+/* both, coffees = right, tea = left */
 
 .menu-container {
   margin-top: 250px;
@@ -222,18 +240,81 @@ a.nav-links:active {
   margin: 0;
 }
 
-.cof.m-line {
+.m-content {
+  width: 65%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+}
+
+td.i {
+  padding-right: 4rem;
+}
+
+.items-and-prices {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.m-line hr {
+  margin-top: 1rem;
+  width: 900px;
+  border: 3px #000 solid;
+}
+
+.items-and-prices {
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+}
+
+.prices {
+  padding-left: 1rem;
+}
+
+.m-content img {
+  object-fit: contain;
+  width: 50%;
+}
+
+/*lines */
+.coffees .m-line {
   padding-left: 2rem;
   float: right;
 }
 
-.cof.m-line hr, .tea.m-line hr {
-  margin-top: 1rem;
-  width: 900px;
+.teas .m-line {
+  padding-right: 2rem;
+  float: left;
 }
 
-.c-line {
-  border: 3px var(--orange) solid;
+.orange hr, .orange p {
+  border-color: var(--orange);
+  color: #FF8000;
+  font-weight: bold;
+}
+
+.purple hr, .purple p {
+  border-color: var(--dark-purple);
+  color: var(--dark-purple);
+  font-weight: bold;
+}
+
+.pink hr, .pink p {
+  border-color: var(--dark-pink);
+  color: var(--dark-pink);
+  font-weight: bold;
+}
+
+/* different sides */
+.cof.m-content img {
+  margin-right: 1rem;
+}
+
+.tea.m-content img {
+  margin-left: 1rem;
 }
 
 .coffees {
@@ -241,104 +322,91 @@ a.nav-links:active {
   float: right;
 }
 
-/* tea */
-.tea.m-line {
-  padding-right: 2rem;
-  float: left;
-}
-
 .teas {
   display: flex;
   float: left;
-}
-
-.cof p {
-  color: #FF8000;
-  font-weight: bold;
-}
-
-.m-content {
-  width: 70%;
-  margin: auto;
-  padding: 1.5rem 0;
-  display: flex;
 }
 
 .tea.m-content {
   flex-direction: row-reverse;
 }
 
-.items-and-prices p {
-  font-weight: 400;
-  font-size: 20px;
-  padding: .5rem 0;
-  color: var(--dark-red);
 
+/* ABOUT and HOME PAGE STYLING */
+/*Index*/
+.test-index1 {
+	text-align: left;
 }
 
-div.items-and-prices  {
-  width: 700px;
+
+.test-index2 {
+	text-align: left;
+	padding-right: 3rem;
 }
 
-.items-and-prices {
-  display: flex;
+.test-index3 {
+	text-align: left;
 }
 
-.prices {
-  padding-left: 4rem;
+.test-index2and3 {
+	font-style: italic;
+	justify-content: center;
+	margin:auto;
+	display:flex;
 }
 
-.m-content img {
-  object-fit: contain;
+#myCarousel {
+  z-index: 0;
 }
 
-.cof.m-content img {
-  margin-right: 2rem;
+/*About */
+.test-about1 {
+	padding-right: 2rem;
+	justify-content: center;
+  width: 60%;
 }
 
-.tea.m-line hr.c-line {
-  border: 3px var(--dark-pink) solid;
+.test-about2 img {
+	width: 90%;
 }
 
-.tea.m-text p {
+.test-about1and2 {
+	margin: auto;
+	display: flex;
+  flex-direction: row;
+}
+
+.test-about3 .quote-text {
   color: var(--dark-pink);
-  font-weight: bold;
+  font-size: 28px;
 }
 
-.cof.m-text.-S p {
-  color: var(--dark-purple);
-}
-
-.m-line.-S hr{
-  border: 3px var(--dark-purple) solid;
-}
-
-#CS hr {
-  border: 3px var(--orange) solid;
-}
-
-#CStxt p {
-  color:  #FF8000;
-}
-
-#HS hr {
-  border: 3px var(--dark-pink) solid;
-}
-
-#HStxt p {
+hr.quote-border {
+  border: .2rem var(--dark-pink) solid;
   color: var(--dark-pink);
 }
 
-#S hr {
-  border: 3px var(--dark-purple) solid;
+.test-about3 {
+  margin: auto;
+  width: 40%;
+  text-align: center;
 }
 
-#Stxt p {
-  color: var(--dark-purple);
+.test-about4 {
+  padding-left: 3rem;
+	justify-content: center;
 }
 
-/* ABOUT PAGE STYLING */
+.test-about1and2 {
+	margin: auto;
+	display: flex;
+  flex-direction: row;
+}
 
+.test-about5 {
+	justify-content: center;
+	text-align: center;
+}
 
 
 /* ALL RESPONSIVE STYLING */
@@ -350,8 +418,8 @@ div.items-and-prices  {
   }
   img.logo  {
     width: 50px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     margin: 0;
@@ -410,7 +478,7 @@ div.items-and-prices  {
   /*FOOTER*/
   .footer {
     position: relative;
-    width: auto;
+    width: inherit;
     display: table;
   }
   .dark-pink-block {
@@ -430,8 +498,9 @@ div.items-and-prices  {
   }
 
   .footer-text p {
-    padding: 10px 20px 10px 20px;
+    padding: 5px;
     margin: 0;
+    font-size: 14px;
   }
   .kitty {
     width: 90px;
@@ -445,6 +514,105 @@ div.items-and-prices  {
   h1 {
     font-size: 28px;
   }
+  /* home tiny */
+  .test-index2 {
+  	text-align: left;
+  	padding-right: .5rem;
+  }
+
+  .test-index3 {
+  	text-align: left;
+  }
+
+  .test-index2and3 {
+  	font-style: italic;
+  	justify-content: center;
+  	margin:auto;
+  	display:flex;
+    font-size: 12px;
+  }
+  .test-index2and3 p {
+    font-size: 12px;
+  }
+
+  /* nmenuuuu */
+  .menu-container {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .m-content {
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 12px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    display: none;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .drinks {
+    width: 60%;
+  }
+
+  .prices {
+    width: auto;
+  }
+
+  .cof.m-content img, .tea.m-content img {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+  }
+
+  .coffees, .teas {
+    text-align: center;
+  }
+
+  .coffees {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .teas {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  /* colors */
+  .orange p {
+    background-color:  #FF8000;
+    color: var(--cream);
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .purple hr, .purple p {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    background-color: var(--dark-pink);
+    color: var(--cream);
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 330px) {
@@ -454,8 +622,8 @@ div.items-and-prices  {
   }
   img.logo  {
     width: 80px;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     margin: 0;
@@ -533,7 +701,7 @@ div.items-and-prices  {
   }
 
   .footer-text p {
-    padding: 10px 20px 10px 20px;
+    padding: 5px;
     margin: 0;
   }
   .kitty {
@@ -542,7 +710,125 @@ div.items-and-prices  {
     top: -60px;
     left: 20px;
   }
+  /* HOME semi small */
+  .test-index2 {
+  	text-align: left;
+  	padding-right: 3rem;
+  }
 
+  .test-index3 {
+  	text-align: left;
+  }
+
+  .test-index2and3 {
+  	font-style: italic;
+  	justify-content: center;
+  	margin:auto;
+  	display:flex;
+  }
+  /* about small */
+  .test-about1and2 {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .test-about1and2.second {
+    margin: auto;
+    display: block;
+  }
+  .test-about1, .test-about4 {
+    padding: 0;
+    width: 100%
+  }
+  .test-about3 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+  }
+  .test-about2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  /* nmenuuuu */
+  .menu-container {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .m-content {
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    display: none;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cof.m-content img, .tea.m-content img {
+    object-fit: contain;
+    width: 100%;
+    margin: 0;
+  }
+
+  .coffees, .teas {
+    text-align: center;
+  }
+
+  .coffees {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  .teas {
+    margin: auto;
+    display: block;
+    float: none;
+  }
+
+  /* colors */
+  .orange p {
+    background-color:  #FF8000;
+    color: var(--cream);
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .purple hr, .purple p {
+    background-color: var(--dark-purple);
+    color: var(--cream);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    background-color: var(--dark-pink);
+    color: var(--cream);
+    font-weight: bold;
+  }
+  .drinks {
+    width: 60%;
+  }
+
+  .prices {
+    width: auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -560,7 +846,9 @@ div.items-and-prices  {
 }
 
 @media only screen and (min-width: 769px) {
+  .items-and-prices {
 
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -571,10 +859,10 @@ div.items-and-prices  {
   .logo, img.logo {
     width: 80px;
     position: absolute;
-    margin-top: -1.5rem;
+    margin-top: -1rem;
     margin-left: 7rem;
-    padding: 10px 30px 10px 30px;
-    border-radius: 100px;
+    padding: 5px 25px;
+    border-radius: 50px;
     background-color: var(--cream);
     border: 10px var(--orange) solid;
     transform: rotate(-5deg) scale(1.2);
@@ -597,14 +885,14 @@ div.items-and-prices  {
   .purple-block {
     background-color: var(--dark-purple);
     color: var(--cream);
-    height: 14rem;
-    margin-top: -10rem;
+    height: 28rem;
+    margin-top: -24rem;
     padding-bottom: 0;
   }
   .content-container {
-    width: 70%;
+    width: 60%;
     margin: auto;
-    margin-top: 202px;
+    margin-top: 212px;
     margin-bottom: 225px;
   }
   .sticky {
@@ -630,7 +918,7 @@ div.items-and-prices  {
     text-decoration: none;
     font-family: 'Notable';
     font-size: 48px;
-    padding-top: 9.5rem;
+    padding-top: 23.5rem;
     text-align: center;
   }
 
@@ -669,8 +957,12 @@ div.items-and-prices  {
     content: "";
     clear: both;
     display: table;
+    transition-duration: .5s;
   }
-
+  .shorter-footer {
+    transform: translateY(2rem);
+    transition-duration: .5s;
+  }
   .dark-pink-block {
     background-color: var(--dark-pink);
     height: 9rem;
@@ -680,9 +972,25 @@ div.items-and-prices  {
     z-index: 0;
     position: relative;
     padding: 0;
-
+  }
+  .orange-block {
+    background-color: var(--orange);
+    height: 5rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 4;
+    transform: rotate(-5deg);
+    transform-origin: top right;
+    transition-duration: .5s;
+  }
+  .dark-pink-block .pink-straighten {
+    height: 9rem;
   }
 
+  .orange-block.orange-straighten {
+    height: 2rem;
+    margin-top: 0;
+  }
   .footer-text {
     color: var(--cream);
     display: flex;
@@ -695,22 +1003,41 @@ div.items-and-prices  {
     padding-right: 4rem;
   }
 
-  .orange-block {
-    background-color: var(--orange);
-    height: 5rem;
-    margin-top: -5rem;
-    position: relative;
-    z-index: 4;
-    transform: rotate(-5deg);
-    transform-origin: top right;
-    transition-duration: .5s;
-  }
 
   .kitty {
     position: relative;
     top: -60px;
     left: 40px;
     width: 120px;
+  }
+  /* about page */
+  .test-about1and2 {
+  	margin: auto;
+  	display: flex;
+    flex-direction: row;
+  }
+  .test-about1and2.second {
+  	margin: auto;
+  	display: flex;
+    flex-direction: row;
+  }
+  .test-about1 {
+  	padding-right: 2rem;
+  	justify-content: center;
+    width: 100%;
+  }
+  .test-about4 {
+    padding-left: 3rem;
+  	justify-content: center;
+  }
+  .test-about3 {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+  }
+  .menu-container {
+    margin-top: 250px;
+    margin-bottom: 225px;
   }
 }
 
@@ -722,6 +1049,10 @@ div.items-and-prices  {
     margin-left: 10rem;
   }
 
+  .logo-container img {
+    overflow:
+  }
+
   .footer-text {
     margin-top: -50px;
   }
@@ -730,7 +1061,7 @@ div.items-and-prices  {
 @media only screen and (min-width: 1216px) {
 
   .logo, img.logo {
-    width: 80px;
+    width: 90px;
     margin-top: -1.5rem;
     margin-left: 12rem;
   }
@@ -738,5 +1069,100 @@ div.items-and-prices  {
   .footer-text {
     margin-top: -50px;
   }
+  .test-about1 {
+  	padding-right: 2rem;
+  	justify-content: center;
+    width: 60%;
+  }
+  /* nmenuuuu */
 
+  .m-content {
+    width: 65%;
+    margin: auto;
+    padding: 1.5rem 0;
+    display: flex;
+  }
+
+  .items-and-prices p, .items-and-prices p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem 0;
+    color: var(--dark-red);
+  }
+
+  .m-line hr {
+    margin-top: 1rem;
+    width: 900px;
+    border: 3px #000 solid;
+    display: block;
+  }
+
+  .items-and-prices {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .prices {
+    padding-left: 1rem;
+  }
+
+  .tea.m-content img, .cof.m-content img {
+    object-fit: contain;
+    width: 50%;
+  }
+  .cof.m-content img {
+    margin-right: 1rem;
+  }
+
+  .tea.m-content img {
+    margin-left: 1rem;
+  }
+
+  .coffees {
+    display: flex;
+    float: right;
+  }
+
+  .teas {
+    display: flex;
+    float: left;
+  }
+
+  .tea.m-content {
+    flex-direction: row-reverse;
+  }
+  /*lines */
+  .coffees .m-line {
+    padding-left: 2rem;
+    float: right;
+  }
+
+  .teas .m-line {
+    padding-right: 2rem;
+    float: left;
+  }
+  /* colors */
+  .orange p, .purple p, .pink p {
+    width: auto;
+    background-color: var(--cream);
+  }
+
+  .orange hr, .orange p {
+    border-color: var(--orange);
+    color: #FF8000;
+    font-weight: bold;
+  }
+
+  .purple hr, .purple p {
+    border-color: var(--dark-purple);
+    color: var(--dark-purple);
+    font-weight: bold;
+  }
+
+  .pink hr, .pink p {
+    border-color: var(--dark-pink);
+    color: var(--dark-pink);
+    font-weight: bold;
+  }
 }

@@ -1,18 +1,40 @@
 extends templates/page.pug
 
 block prepend header
-  - const page = "Home";
+ - const page = "Home";
 
 block content
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  h1 Lorem Ipsum
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .test-index1
+    p Hi there, stranger! If you’re looking for a spot of sunlight to rest and relax for a moment, you’ve come to the right place. Settle in, and get ready for some next level tea, coffee, and vittles. We’re not kitten about our drinks!
+    
+    //CAROUSEL !
+    .owl-carousel#myCarousel
+      .c-pic 
+        img(src='images/storefront.jpg')
+      .c-pic
+        img(src='images/interior 1.jpeg')
+      .c-pic
+        img(src='images/cat1.jpeg')
+      .c-pic
+        img(src='images/interior 2.jpeg')
+      .c-pic
+        img(src='images/cat2.jpeg')
+      .c-pic
+        img(src='images/sandwiches.jpeg')
+    .test-index2and3
+      .test-index2
+        p Monday
+        p Tuesday
+        p Wednesday
+        p Thursday
+        p Friday
+        p Saturday
+        p Sunday
+      .test-index3
+        p 11AM-8PM 
+        p 11AM-8PM
+        p 11AM-8PM
+        p 11AM-8PM
+        p 10AM-10PM 
+        p 10AM-10PM
+        p 10AM-7PM

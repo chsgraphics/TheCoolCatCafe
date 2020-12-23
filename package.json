@@ -1,0 +1,26 @@
+{
+  "name": "TheCoolCatCafe",
+  "version": "1.0.0",
+  "description": "Looking for a sunny spot to rest and relax? Purr-use our selection of teas, coffees, soups, and sandwiches!",
+  "main": "index.js",
+  "dependencies": {
+    "acorn": "^8.0.4",
+    "owl.carousel": "^2.3.4",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chsgraphics/TheCoolCatCafe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chsgraphics/TheCoolCatCafe/issues"
+  },
+  "homepage": "https://github.com/chsgraphics/TheCoolCatCafe#readme"
+}
