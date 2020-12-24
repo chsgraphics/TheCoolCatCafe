@@ -2,7 +2,7 @@
   pretty: true,
   locals: {
     links: [
-      ["Home", "/"],
+      ["Home", "/index.pug"],
       ["Menu", "/menu.pug"],
       ["About", "/about.pug"],
     ],
