@@ -535,6 +535,32 @@ hr.quote-border {
     font-size: 12px;
   }
 
+  /* about small */
+  .test-about1and2 {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .test-about1and2.second {
+    margin: auto;
+    display: block;
+  }
+  .test-about1, .test-about4 {
+    padding: 0;
+    width: 100%
+  }
+  .test-about3 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+  }
+  .test-about2 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
   /* nmenuuuu */
   .menu-container {
     margin-top: 1.5rem;
